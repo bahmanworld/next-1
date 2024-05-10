@@ -1,7 +1,5 @@
 import { prisma } from "../../../../../prisma/client";
 
-export const runtime = "edge";
-
 export const GET = async () => {
   const movie = await prisma.movie.create({
     data: {
@@ -11,4 +9,5 @@ export const GET = async () => {
       properties: { imdbRating: 5.4, imdbVotes: 30000 },
     },
   });
+  return Response.json(movie)
 };

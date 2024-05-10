@@ -7,7 +7,9 @@ export default function Home() {
       <div className="text-3xl">Home Page</div>
       <button
         onClick={() => {
-          alert("Hello World");
+          fetch("/api/movie/new")
+            .then((res) => res.json())
+            .then((res) => console.log(res));
         }}
       >
         Create New Movie

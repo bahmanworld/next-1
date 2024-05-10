@@ -17,5 +17,5 @@ model Movie {
   name           String
   properties     Json?
   plot           String?
-  year           Int?
+  year           String?
 }

@@ -1,8 +1,6 @@
 import Link from "next/link";
 import React from "react";
 
-export const runtime = "edge";
-
 function page() {
   return (
     <div>
